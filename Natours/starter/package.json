@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "live-server": "live-server"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "live-server": "^1.2.0"
+  },
+  "dependencies": {
+    "jshint": "^2.9.5"
+  }
+}
