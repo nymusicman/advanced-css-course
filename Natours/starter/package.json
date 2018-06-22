@@ -8,10 +8,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.9.0",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.0"
   },
   "dependencies": {
+    "@icon/linea-basic": "^1.0.0-3",
     "jshint": "^2.9.5"
   }
 }

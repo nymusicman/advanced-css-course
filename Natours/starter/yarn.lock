@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@icon/linea-basic@^1.0.0-3":
+  version "1.0.0-3"
+  resolved "https://registry.yarnpkg.com/@icon/linea-basic/-/linea-basic-1.0.0-3.tgz#15954fda27a6d1f4af85e51521c7c010cfa29690"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
