@@ -39,15 +39,15 @@
         }
     }
 
-    
+
     &:hover &__side--front {
         transform: rotateY(-180deg);
     }
-    
+
     &:hover &__side--back {
         transform: rotateY(0);
     }
-    
+
     //FRONT SIDE STYLING
     &__picture {
         background-size: cover;
@@ -89,8 +89,8 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, 
-                rgba($color-secondary-light, .85), 
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, .85),
                 rgba($color-secondary-dark, .85)
             )
         }
@@ -116,7 +116,7 @@
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
-                
+
                 &:not(:last-child) {
                     border-bottom: 1px solid $color-grey-light-2;
                 }
@@ -126,10 +126,7 @@
 
     //BACK SIDE STYLING
     &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include center-hv;
         width: 90%;
         text-align: center;
     }
