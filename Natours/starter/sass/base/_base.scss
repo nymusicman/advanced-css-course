@@ -9,6 +9,10 @@
 html {
     //This defines what one rem is which affects all elements on the page so it should not be moved to typography.
   font-size: 62.5%; /* This equals 10px on a 16px browser. root font size rem measured against this */
+
+  @include respond(phone){
+    font-size: 50%;
+  }
 }
 
 body {

@@ -1,3 +1,17 @@
+/*
+0-600 Phone
+600-900 Tablet Portrait
+900-1200 Tablet Landscape
+1200-1800 Normal Desktop Styles (No Query)
+1800+ Big Desktop Screens
+*/
+/*
+breakpoint argument choices
+    phone
+    tab-port
+    tab-land
+    big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +22,9 @@
 html {
   font-size: 62.5%;
   /* This equals 10px on a 16px browser. root font size rem measured against this */ }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }

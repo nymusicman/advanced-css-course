@@ -1,7 +1,10 @@
 Selecting Breakpoints: 
     Bad: Using width of existing devices. Usually using Apple products. Problems are not future proof and Apple may not be the most used device.
 
-    Good: Look at all the most used devices on the internet and try to group together to figure out breakpoints.
+    Good (We are using this for this project): 
+        Look at all the most used devices on the internet and try to group together to figure out breakpoints.
+        gs.statcounter.com
 
     Perfect: Ignore devices. Look at contereaknt and design.
-        Begin either mobile or desktop and then start increasing/descreasing screen width until something looks broken, then use that as a breakpoint.
+        Begin either mobile or desktop and then start increasing/descreasing screen width until something looks broken, 
+        then use that as a breakpoint.
