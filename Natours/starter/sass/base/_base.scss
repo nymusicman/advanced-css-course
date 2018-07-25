@@ -9,12 +9,29 @@
 html {
     //This defines what one rem is which affects all elements on the page so it should not be moved to typography.
   font-size: 62.5%; /* This equals 10px on a 16px browser. root font size rem measured against this */
-
-  @include respond(phone){
-    font-size: 50%;
+  
+  
+  
+  @include respond(tab-land){ //width < 900
+    font-size: 56.25%; //1 rem 9px. 9/16= 56.25%
   }
+  
+  
+  @include respond(tab-port){ //width < 600
+    font-size: 50%; //1 rem 8px. 8/16= 50%
+  }
+  
+  @include respond(big-desktop){
+    font-size: 75%; //1 rem 12px. 12/16= 75%
+  }
+  
 }
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port){ //width < 600
+    padding: 0;
+  }
 }
