@@ -199,12 +199,15 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg"); } }
   @media (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -560,11 +563,20 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5-small.jpg); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .card__picture--1 {
+          background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); } }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6-small.jpg); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .card__picture--2 {
+          background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); } }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7-small.jpg); }
+      @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        .card__picture--3 {
+          background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg); } }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -852,6 +864,9 @@ body {
   .popup__left {
     width: 33.3333333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: table-row; } }
   .popup__right {
     width: 66.666666667%;
     display: table-cell;
@@ -860,6 +875,11 @@ body {
   .popup__img {
     display: block;
     width: 100%; }
+    @media (max-width: 56.25em) {
+      .popup__img {
+        display: inline-block;
+        width: 50%;
+        margin-top: -5rem; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -873,6 +893,15 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 56.25em) {
+      .popup__text {
+        font-size: 1.6rem; } }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        -moz-column-count: 1;
+        -moz-column-rule: none;
+        column-count: 1;
+        column-rule: none; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -902,10 +931,13 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4-small.jpg");
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -11rem; }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .section-features {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg"); } }
   @media (max-width: 56.25em) {
     .section-features {
       padding: 10rem 0; } }
@@ -935,16 +967,19 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10-small.jpg");
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10.jpg"); } }
   @media (max-width: 75em) {
     .book {
       background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(../img/nat-10.jpg); } }
   @media (max-width: 56.25em) {
     .book {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10.jpg); } }
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/nat-10-small.jpg); } }
   .book__form {
     width: 50%;
     padding: 6rem; }
